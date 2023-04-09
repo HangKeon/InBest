@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.inbest">
+
+    <application
+        android:allowBackup="true"
+
+
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar"
+        tools:ignore="Instantiatable">
+        <activity android:name=".DeleteActivity"/>
+        <activity android:name=".CoinManagementActivity"/>
+        <activity android:name=".StockManagementActivity"/>
+        <activity android:name=".InformationActivity"/>
+        <activity android:name=".PwdActivity"/>
+        <activity android:name=".CoinAddActivity"/>
+        <activity android:name=".CoinConnectionActivity"/>
+        <activity android:name=".CoinActivity"/>
+        <activity android:name=".ConnectionFailActivity"/>
+        <activity android:name=".ConnectionSuccess2Activity"/>
+        <activity android:name=".ConnectionSuccessActivity"/>
+        <activity android:name=".StockConnectionActivity"/>
+        <activity android:name=".StockAddActivity"/>
+        <activity android:name=".StockActivity"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
+        <activity android:name=".JoinFinishActivity"/>
+        <activity android:name=".JoinActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".LandingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

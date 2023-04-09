@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나를 위한\n단 하나의 자산관리\n포트폴리오"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4F4F4"
+            android:hint="ID 또는 Email을 입력하세요."
+            android:inputType="textEmailAddress|text"
+            android:padding="10dp"
+            android:textColor="#7A7878"
+            android:textColorHint="#7A7878" />
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="20dp"
+            android:background="#F4F4F4"
+            android:hint="비밀번호를 입력하세요."
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#7A7878"
+            android:textColorHint="#7A7878" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp">
+
+            <!--<RadioButton
+                android:id="@+id/autoLoginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7878"
+                android:checked="false"
+                android:duplicateParentState="false"
+                android:text="자동로그인"
+                android:textColor="@color/black"
+                android:textStyle="bold" />-->
+
+            <!--<RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveLoginBtn"
+                android:layout_marginLeft="70dp"
+                android:text="ID저장"
+                android:textColor="@color/black"
+                android:buttonTint="#7A7878"
+                android:textStyle="bold" />-->
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_btn"
+            android:layout_marginTop="40dp"
+            android:text="로그인"
+            android:textStyle="bold"
+            android:background="#B77CFC"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quest"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/make_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="#2196F3"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
